@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <link rel="manifest" href="manifest.json">
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+    <ion-pane>
+      <ion-content class="content" ng-controller="flexCalcCtrl">
+        <center>
+          <div class="row">
+            <div class="col">
+              <img src="img/logo.png">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h5>Insira o preço dos combustíveis</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+                <span class="input-label" id="gas">Gasolina</span>
+                <input type="number" ng-model="gasPrice">
+            </div>
+            <div class="col">
+                <span class="input-label" id="eta">Etanol</span>
+                <input type="number" ng-model="etaPrice">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button class="button button-positive {{button}}" ng-click="flexCalc()">
+                Qual é mais vantajoso?
+              </button>
+            </div>
+          </div>
+          <div class="row" ng-show="card">
+            <div class="col">
+                <div class="card">
+                  <div class="item item-text-wrap" id="{{cardColor}}">{{cardText}}</div>
+                </div>
+            </div>
+          </div>
+        </center>
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>
