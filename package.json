@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "angular-money-mask": "^1.0.0",
-    "cordova-android": "7.0.0",
+    "cordova-android": "11.0.0",
     "cordova-plugin-device": "^1.1.4",
     "cordova-plugin-ionic-webview": "^1.1.16",
     "cordova-plugin-splashscreen": "^4.0.3",
